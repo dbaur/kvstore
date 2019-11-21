@@ -4,7 +4,7 @@ jdk:
 dist: trusty
 language: java
 install: travis_wait mvn -q install -U -DskipTests=true
-script: travis_wait mvn -q install -Dmaven.javadoc.skip=true sonar:sonar
+script: travis_wait mvn -q install -Dmaven.javadoc.skip=true
 after_success:
 - ci/publish_docker.sh
 branches:
