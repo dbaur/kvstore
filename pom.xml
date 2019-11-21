@@ -56,10 +56,10 @@
         <artifactId>jib-maven-plugin</artifactId>
         <configuration>
           <from>
-            <image>gcr.io/distroless/java:debug</image>
+            <image>openjdk:8-jdk</image>
           </from>
           <to>
-            registry.hub.docker.com/dbaur/kvstore:${docker.tag}
+            dbaur/kvstore:${docker.tag}
           </to>
           <container>
             <useCurrentTimestamp>true</useCurrentTimestamp>
